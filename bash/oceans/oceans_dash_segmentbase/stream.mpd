@@ -1,0 +1,37 @@
+<?xml version="1.0" ?>
+<MPD mediaPresentationDuration="PT46.547S" minBufferTime="PT2.22S" profiles="urn:mpeg:dash:profile:isoff-on-demand:2011" type="static" xmlns="urn:mpeg:dash:schema:mpd:2011">
+  <!-- Created with Bento4 mp4-dash.py, VERSION=2.0.0-634 -->
+  <Period>
+    <!-- Video -->
+    <AdaptationSet maxHeight="720" maxWidth="1280" mimeType="video/mp4" segmentAlignment="true" startWithSAP="1" subsegmentAlignment="true" subsegmentStartsWithSAP="1">
+      <Representation bandwidth="4894048" codecs="avc1.64001E" frameRate="24000/1001" height="400" id="video-avc1-1" scanType="progressive" width="960">
+        <BaseURL>media-video-avc1-1.mp4</BaseURL>
+        <SegmentBase indexRange="727-782">
+          <Initialization range="0-726"/>
+        </SegmentBase>
+      </Representation>
+      <Representation bandwidth="3266910" codecs="avc1.64001F" frameRate="24000/1001" height="720" id="video-avc1-2" scanType="progressive" width="1280">
+        <BaseURL>media-video-avc1-2.mp4</BaseURL>
+        <SegmentBase indexRange="727-782">
+          <Initialization range="0-726"/>
+        </SegmentBase>
+      </Representation>
+      <Representation bandwidth="1531379" codecs="avc1.64001E" frameRate="24000/1001" height="360" id="video-avc1-3" scanType="progressive" width="640">
+        <BaseURL>media-video-avc1-3.mp4</BaseURL>
+        <SegmentBase indexRange="728-783">
+          <Initialization range="0-727"/>
+        </SegmentBase>
+      </Representation>
+    </AdaptationSet>
+    <!-- Audio -->
+    <AdaptationSet lang="en" mimeType="audio/mp4" segmentAlignment="true" startWithSAP="1" subsegmentAlignment="true" subsegmentStartsWithSAP="1">
+      <Representation audioSamplingRate="48000" bandwidth="128066" codecs="mp4a.40.2" id="audio-en-mp4a">
+        <AudioChannelConfiguration schemeIdUri="urn:mpeg:dash:23003:3:audio_channel_configuration:2011" value="2"/>
+        <BaseURL>media-audio-en-mp4a.mp4</BaseURL>
+        <SegmentBase indexRange="667-734">
+          <Initialization range="0-666"/>
+        </SegmentBase>
+      </Representation>
+    </AdaptationSet>
+  </Period>
+</MPD>
